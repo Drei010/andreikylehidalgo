@@ -1,0 +1,561 @@
+/* 
+    Created on : 11 Jan 2023, 10:18:10 pm
+    Author     : Andrei
+
+Color Scheme
+Cerulean #4484CE
+Aluminium #D9D9D9
+Light #F9F00
+Tangerine #F19F4D
+
+
+*/
+@font-face{
+    font-family: 'Blanka';
+    src: url(../fonts/Blanka-Regular.woff) format('woff');
+}
+
+/*Body*/
+html{
+    scroll-behavior: smooth;
+}
+
+/*loader*/
+#loader {
+  position: absolute;
+  left:30%;
+  top:50%;
+  margin:-200px -200px 0 0;
+  z-index: 1;
+  font-size: 14vw;
+  font-family: 'Blanka';
+  color: #252839;
+  text-transform: uppercase;
+}
+
+#loader::before{
+   content: attr(data-text);
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 0;
+   height: 100%;
+   color: white;
+   overflow: hidden;
+   animation: animate 7s linear infinite;
+
+}
+@keyframes animate{
+   0%,10%,100%
+   {
+   width: 0;
+   }
+   70%,90%
+   {
+   width: 100%
+   }
+}
+#Logo {
+  content: url("../images/logo2.png");
+  line-height: 80px;
+  padding: 0 100px;
+  height:100%;
+  color: white;
+  text-transform: uppercase;
+}
+
+#animateLogo {
+  position: absolute;
+  display:none;
+  z-index: 1;
+  font-size: 24px;
+  font-family: 'Blanka';
+  color: white;
+  text-transform: uppercase;
+  animation: slidetonav 1s linear; 
+  display: none;
+}
+
+@keyframes slidetonav { 
+  0% {
+    top:50%;
+    left:30%;
+    font-size: 14vw;
+    margin:-200px -200px 0 0;
+    
+  }
+  100% {
+     top: 0;
+     left: 100px;
+     font-size: 24px;
+  }
+}
+
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding:0;
+    background-color:  #4484CE; /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, #4484CE, #F19F4D);
+    overflow-x: hidden;
+    
+}
+
+
+
+/*Navbar*/
+nav{
+  background: transparent;
+  height: 80px;
+  width: 100%;
+}
+nav ul{
+  float: right;
+  margin-right: 20px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a{
+  color: white;
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition:1s ease-in;
+}
+
+nav ul li a::before{
+  content:attr(data-text);
+  position:absolute;
+  color:#0798c7;
+  overflow: hidden;
+  width:0%;
+  white-space: nowrap;
+  transition:1s ease-in;
+}
+nav ul li a:hover::before{
+  width:100%;
+}
+
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check{
+  display: none;
+}
+
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -120%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  
+  nav ul li a::before{
+   left: -120%;
+  }
+  
+  
+  nav ul li a:hover::before{
+  width:100%;
+}
+
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+
+@media (max-width: 350px){
+#Logo {
+
+  line-height: 80px;
+  padding: 0 10px;
+}
+}
+
+
+
+/*Intro*/
+.introContainer {
+    height: 500px;
+    color:white;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+    
+}
+
+.introSection {
+  display: grid;
+    grid-template-areas:
+      'hello hello hello hello hello hello'
+      'spaceA resumeDownload contactLink imageIntro1 imageIntro2 spaceB';
+  gap: 10px;
+  padding: 40px;
+  justify-content: center;
+  text-align: center;
+ 
+}
+.spaceA{
+  grid-area: spaceA; 
+  width:500px;
+
+}
+.spaceB{
+  grid-area: spaceB; 
+  width:500px;
+
+}
+.hello{
+    grid-area: hello; 
+    font-size: 3rem;
+   
+
+}
+.resumeDownload{
+   grid-area: resumeDownload; 
+
+}
+
+
+
+.contactLink{
+   grid-area: contactLink; 
+    
+}
+
+.contactLink,.resumeDownload{
+     display: inline-block;
+     text-decoration: none;
+     color:white;
+    transition: transform 0.3s ease;
+     padding: 10px;
+    font-size: 1.2rem;
+     border: 1px solid white;
+   
+}
+
+.imageIntro1{
+   grid-area: imageIntro1; 
+   
+
+}
+
+.imageIntro2{
+   grid-area: imageIntro2; 
+    
+
+}
+
+
+.introImages{
+     width: 40px;
+    height: 40px;  
+    
+  
+}
+
+.introImages:hover,.contactLink:hover,.resumeDownload:hover{
+    transform: scale(1.5);
+    transition: transform .3s;
+}
+
+
+
+
+/*Skills*/
+.skillsContainer {
+    background: #D9D9D9;
+    position: relative;
+    height: 700px;
+    z-index:2;
+    justify-content: center;
+    text-align: center;
+}
+
+.skillsContainer:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -36px;
+    width: 100%;
+    height: 100px;
+    background: #D9D9D9;
+    -webkit-transform: skewY(2.5deg);
+    -moz-transform: skewY(2.5deg);
+    -ms-transform: skewY(2.5deg);
+    -o-transform: skewY(2.5deg);
+    transform: skewY(2.5deg);
+    -webkit-backface-visibility: hidden;
+        justify-content: center;
+    text-align: center;
+}
+
+
+.skillsContainer:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -36px;
+    width: 100%;
+    height: 100px;
+    background: #D9D9D9;
+    -webkit-transform: skewY(2.5deg);
+    -moz-transform: skewY(2.5deg);
+    -ms-transform: skewY(2.5deg);
+    -o-transform: skewY(2.5deg);
+    transform: skewY(2.5deg);
+    -webkit-backface-visibility: hidden;
+    z-index:2;
+}
+
+.skillsSection {
+    margin: 10px 0;
+    padding: 0 20px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+
+.skill1 {
+    grid-area: skill1;
+    transition: transform .3s;
+}
+.skill2 {
+    grid-area: skill2;
+    transition: transform .3s;
+}
+.skill3 {
+    grid-area: skill3;
+    transition: transform .3s;
+}
+.skill4 {
+    grid-area: skill4;
+    transition: transform .3s;
+}
+.skill5 {
+    grid-area: skill5;
+    transition: transform .3s;
+}
+.skill6 {
+    grid-area: skill6;
+    transition: transform .3s;
+}
+.skill1:hover {
+    transform: scale(1.5);
+}
+.skill2:hover {
+    transform: scale(1.5);
+}
+.skill3:hover {
+    transform: scale(1.5);
+}
+.skill4:hover {
+    transform: scale(1.5);
+}
+.skill5:hover {
+    transform: scale(1.5);
+}
+.skill6:hover {
+    transform: scale(1.5);
+}
+
+.skillImages{
+    width: 100px;
+    height: 100px;
+}
+
+.skillGrid {
+    display: grid;
+    grid-template-areas:
+        'skill1 skill2 skill3 '
+        'skill4 skill5 skill6';
+    gap: 10px;
+    padding: 10px;
+}
+
+.skillGrid > div {
+    text-align: center;
+    padding: 20px 0;
+}
+
+
+/*Projects Section*/
+.projectsContainer {
+    z-index:1;
+    top:-25px;
+    background: #F19F4D;
+    position: relative;
+    height: 800px;
+    justify-content: center;
+    text-align: center;
+    
+}
+.projectSection{
+  margin: 10px 0;
+  padding: 0 20px;
+  padding-bottom: 10px;
+  position: relative;
+
+}
+
+
+.projectGrid {
+    display: grid;
+    grid-template-areas:
+     'project1 project2 '
+     'project1 project2 ';
+    gap: 100px;  
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    overflow: hidden;
+    
+}
+.project1 {
+    grid-area: project1;
+
+}
+.project2 {
+    grid-area: project2;
+
+}
+
+.projectImages{
+    width: 600px;
+    height: 300px;
+}
+
+/*Footer Section*/
+
+.contactMe{
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  color: white;
+}
+#footerContainer {
+    justify-content: center;
+    display: flex;
+    color: white;
+    display: grid;
+    grid-template-areas:
+     'emailAddress phoneNumber ';
+     gap: 100px;  
+}
+
+.emailAddress {
+  grid-area: emailAddress;
+
+}
+.phoneNumber {
+  grid-area: phoneNumber;
+}
+
+
+
+#Footer {
+    height: 100%;
+    background-color:  #333; 
+    margin-top: -45px;
+}
+
+
+input[type=text], select, textarea {
+    width: 600px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical; 
+}
+
+hr.solid {
+    border-top: 3px solid #e7e7e7;
+    width: 100%;
+  
+}
+
+#footerSubmit {
+    border: 2px solid #e7e7e7;
+    background-color: transparent;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    float:right;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#footerSubmit:hover {
+    background-color: #e7e7e7;
+}
+
+#linksContainer{
+    text-align: center;    
+    background-color: #e7e7e7;
+    padding: 16px;
+}
+
+.contactLinks{
+  color:white;
+  text-decoration:none;
+
+}
+.contactLinks:hover{
+  color:white;
+  text-decoration:underline;
+
+}
+
+.contactLinks:visited{
+  text-decoration:none;
+
+}
+
+@media only screen and (max-width: 600px) {
+    input[type=text], select, textarea {
+    width: 250px;
+}
+    
+    
+    
+}
