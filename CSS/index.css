@@ -209,7 +209,7 @@ nav ul li a:hover::before{
 
 /*Intro*/
 .introContainer {
-    height: 500px;
+    height: 450px;
     color:white;
     justify-content: center;
     text-align: center;
@@ -293,16 +293,36 @@ nav ul li a:hover::before{
 }
 
 
+.aboutContainer{
+  background: #4484CE;
+  position: relative;
+  height: 700px;
+  margin-top: 100px;
+  justify-content: center;
+  display:block;
+  color:white;
+
+
+}
+.aboutmeSection{
+   width:50%;
+   justify-content: center;
+   text-align: center;
+   margin: 0 auto;
+
+  
+}
 
 
 /*Skills*/
 .skillsContainer {
     background: #D9D9D9;
     position: relative;
-    height: 700px;
+    height: 600px;
     z-index:2;
     justify-content: center;
     text-align: center;
+    padding: 50px;
 }
 
 .skillsContainer:before {
