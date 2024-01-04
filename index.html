@@ -37,7 +37,7 @@
 
           <div class="introSection">
           
-        <h1 class="hello">Hello I'm Andrei | Software Engineer</h1> 
+        <h1 class="hello">Hello I'm Andrei<div id="typewriter"></div></h1>
         
     
          <a class="resumeDownload" href="Resume/Hidalgo,AndreiKyle,A-CICS.pdf" download><i class="fa fa-download" aria-hidden="true"></i>Resume</a>
@@ -104,7 +104,19 @@
             <div class="skill6">
               <img class="skillImages" src="images/js.png" alt="Javascript">
               <h3>JAVASCRIPT</h3>
-          </div>
+          </div> 
+        <div class="skill7"> 
+            <img class="skillImages" src="images/Unity.png" alt="UNITY">
+            <h3>UNITY</h3>
+        </div>
+        <div class="skill8">
+            <img class="skillImages" src="images/C_Sharp.png" alt="C#">
+            <h3>C#</h3>
+        </div>
+          <div class="skill9">
+            <img class="skillImages" src="images/Python.png" alt="Python">
+            <h3>PYTHON</h3>
+        </div>
         </div>
         
         <p></p>
@@ -121,14 +133,18 @@
        <h1>Projects</h1> 
        <div class="projectGrid">
            <div class="project1"> 
-            <h1>Delivery Expenses Records App</h1>
+            
        <img class="projectImages" src="images/project1.png" alt="Project 1">
+          <h1>Delivery Expenses Records App</h1>
              <p>A website dedicated to helping you track your Online Shopping Expenses.</p>
-              <!--
-             <a href="https://github.com/Drei010/Delivery-Expenses-App">
-              <img class="introImages" src="images/github.png" alt="github">
-              Code
-             </a>-->
+             <div class="projectLanguagesContainer">
+             <a>HTML</a><a>CSS</a><a>JAVASCRIPT</a><a>JAVA</a><a>MYSQL</a>
+             </div>
+             <div class="projectLink">
+              <a>Github</a><a>Live</a>
+             </div>
+
+
        </div>
            <br>
        <div class="project2"> 
@@ -142,6 +158,11 @@
       <img class="projectImages" src="images/project3.png" alt="Project 3">
       <p>Midnight Coffee is a website that features a menu where customers can order food.</p>
        </div>
+       <div class="project4"> 
+        <h1>Handy Magic - A Hand Gesture recognition based game</h1>
+    <img class="projectImages" src="images/project4.png" alt="Project 4">
+    <p>Handy magic</p>
+     </div>
        </div>
        
       </div>
@@ -166,7 +187,7 @@
         <div class="phoneNumber">
           <h3>Phone Number</h3>
             <br>
-            09451549642
+            09451549642 || 09296693662
             <hr class="solid">
       </div>
       <br>
@@ -232,6 +253,33 @@ animateLogo.addEventListener("animationend", function() {
 
 
 
+    const roles = ["Software Engineer", "Programmer", "Full Stack Developer"];
+    const typewriterElement = document.getElementById('typewriter');
+    let roleIndex = 0;
+
+    function updateTypewriterText() {
+      typewriterElement.textContent = `${roles[roleIndex]}`;
+      roleIndex = (roleIndex + 1) % roles.length;
+    }
+
+    function startTypingAnimation() {
+      // Update text before starting typing animation
+      updateTypewriterText();
+
+      // Start typing animation
+      typewriterElement.style.animation = 'typing 5s steps(30) infinite, blink-caret 0.5s step-end infinite';
+
+      // Set up an interval to change the text every 5 seconds (adjust as needed)
+      setInterval(() => {
+        typewriterElement.style.animation = 'none'; // Disable animation temporarily
+        updateTypewriterText();
+        typewriterElement.offsetWidth; // Trigger reflow
+        typewriterElement.style.animation = 'typing 5s steps(30) infinite, blink-caret 0.5s step-end infinite';
+      }, 5000);
+    }
+
+    // Start the typing animation
+    startTypingAnimation();
 
     
         </script>
