@@ -341,12 +341,48 @@ color:white;
 left :-100px;
 position:absolute;
 }
+.laptopImage{
+  width: 300px;
+  height: 200px;
+}
+.laptopContainer {
+  right :-150px;
+position:absolute;
+}
+.panImage{
+  width: 300px;
+  height: 200px;
+}
+.panContainer {
+  left :-100px;
+  position:absolute;
+}
 @media only screen and (max-width: 820px) {
   .aboutmeSection{
     font-size: 0.8em;
    }
-
-
+   .PS5image{
+    width: 100px;
+    height: 50px;
+  }
+  .PS5container {
+    left :-150px;
+    }
+    .laptopImage{
+      width: 200px;
+      height: 100px;
+    }
+    .laptopContainer {
+      right :-200px;
+      }
+      .panImage{
+        width: 200px;
+        height: 100px;
+      }
+      .panContainer {
+        left :-150px;
+        position:absolute;
+      }
 }
 
 /*Skills*/

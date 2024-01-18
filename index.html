@@ -64,16 +64,20 @@
             <br>
             <br>
             <h1>About me</h1>
-            <div class="PS5container"> <img class="PS5image" src="images/PS5.gif" alt="PS5"></div>
+            <div class="PS5container"><img class="PS5image" src="images/PS5.gif" alt="PS5"></div>
         <p>"I'm a student aspiring to be a full stack developer from Cavite, Philippines. Currently,
            I am studying Computer Science at the University of Santo Tomas. </p>
-          
+
+           <div class="laptopContainer"><img class="laptopImage" src="images/Laptop.gif" alt="Laptop"></div>
+
         <p>Since I have always been fascinated by technology and its ability to transform the world, 
           I am particularly interested in web development. I enjoy creating websites, with a particular focus on the back-end. 
           There's something about the logic behind it that really appeals to me, 
           and I love the challenge of writing efficient and maintainable code.</p>
+          <div class="panContainer"><img class="panImage" src="images/pan.gif" alt="Pan"></div>
           <p> When I'm not coding or studying, I'm probably experimenting with new recipes and cooking food in the kitchen.
           </p>
+
           <hr class="solid">
 
         </div>
@@ -297,12 +301,60 @@ gsap.to(".PS5container",{
     scrub: true,
     markers: false
   },
-  x: 300,
+  x: calculateMovementDistance(),
   rotate:360,
   ease: "none",
   duration: 1
 });
 
+gsap.to(".laptopContainer",{
+  scrollTrigger:{
+    trigger:".laptopContainer",
+    start: "top center",
+    end: "top 150px",
+    scrub: true,
+    markers: false
+  },
+  x:-(calculateMovementDistance()),
+  rotate:360,
+  ease: "none",
+  duration: 1
+});
+
+
+gsap.registerPlugin(ScrollTrigger);
+gsap.to(".panContainer",{
+  scrollTrigger:{
+    trigger:".panContainer",
+    start: "top center",
+    end: "top 150px",
+    scrub: true,
+    markers: false
+  },
+  x: calculateMovementDistance(),
+  ease: "none",
+  duration: 1
+});
+
+
+
+
+function calculateMovementDistance() {
+  // Get the current screen width
+  const screenWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+
+  // Set a base movement distance
+  let movementDistance = 300;
+
+  // Adjust the movement distance based on screen width (modify as needed)
+  if (screenWidth < 768) {
+    movementDistance = 150; // Adjust for smaller screens
+  } else if (screenWidth < 1200) {
+    movementDistance = 200; // Adjust for medium-sized screens
+  }
+
+  return movementDistance;
+}
 
 
 
