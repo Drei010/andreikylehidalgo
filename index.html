@@ -1,23 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Andrei Kyle Hidalgo</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Andrei Kyle Hidalgo</title>
         <link rel="stylesheet" type="text/css" href="CSS/index.css" />  
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
         </head>
-
-    <body >
-
-<!--Loader-->
-        <h1 id="loader" data-text="AKH">AKH</h1>
-     <a id="animateLogo">AKH</a>
-        
-      <div id="myDiv" style="display:none;">  
-         
+    <!--Loader-->
+    <h1 id="loader" data-text="AKH">AKH</h1>
+    <a id="animateLogo">AKH</a>
+<body >        
+      <div id="myDiv" >          
         <!--Navbar-->
         <nav>
               <input type="checkbox" id="check">
@@ -133,51 +129,83 @@
     </div>
 
        <!--Personal Projects-->
-       <div id="projectsContainer" class="projectsContainer">
-        <div  class="projectSection">
-          <br>
-          <br>
-          <br>
-          <br>
+       <div class="spacer">
+       </div>
+       <div class="projectTitle">
        <h1>Projects</h1> 
-       <div class="projectGrid">
-           <div class="project1"> 
-            
-       <img class="projectImages" src="images/project1.png" alt="Project 1">
-          <h1>Delivery Expenses Records App</h1>
-             <p>A website dedicated to helping you track your Online Shopping Expenses.</p>
-              <!--
-             <div class="projectLanguagesContainer">
-             <a>HTML</a><a>CSS</a><a>JAVASCRIPT</a><a>JAVA</a><a>MYSQL</a>
-             </div>
-             <div class="projectLink">
-              <a>Github</a><a>Live</a>
-             </div>
-          -->
-
-       </div>
-           <br>
-       <div class="project2"> 
-            <h1>CloudComplexitech </h1>
-        <img class="projectImages" src="images/project2.png" alt="Project 2">
-        <p>A website that gives users knowledge on the configuring tech related stuff.</p>
-         </div>
-
-         <div class="project3"> 
-          <h1>Midnight Coffee Website</h1>
-      <img class="projectImages" src="images/project3.png" alt="Project 3">
-      <p>Midnight Coffee is a website that features a menu where customers can order food.</p>
-       </div>
-       <div class="project4"> 
-        <h1>Handy Magic - A Hand Gesture recognition based game</h1>
-    <img class="projectImages" src="images/project4.png" alt="Project 4">
-    <p>Handy magic is a game that uses hand gestures to generate spells. It records your real time hand movements using your webcam.</p>
-     </div>
-       </div>
-       
       </div>
+
+       <div id="projectsContainer" class="projectsContainer">
+        <div class="leftProjects">
+          <div class="projectLeftWrapper">
+            <div class="projectImages">
+             
+                <div class="desktopPhoto P1"></div>
+
+                <div class="desktopPhoto P2"></div> 
+
+                <div class="desktopPhoto P3"></div>
+
+                <div class="desktopPhoto P4"></div>             
+           
+            </div>
+
+            <div class="mobileContent">
+              <div class="mobilePhoto P1"></div>
+              <h1>Delivery Expenses Records App</h1>
+              <p>A website dedicated to helping you track your Online Shopping Expenses.</p>
+
+              <div class="mobilePhoto P2"></div>
+              <h1>CloudComplexitech </h1>
+              <p>A website that gives users knowledge on the configuring tech related stuff.</p>
+
+              <div class="mobilePhoto P3"></div>
+              <h1>Midnight Coffee Website</h1>
+              <p>Midnight Coffee is a website that features a menu where customers can order food.</p>
+
+              <div class="mobilePhoto P4"></div>
+              <h1>Handy Magic - A Hand Gesture recognition based game</h1>
+              <p>Handy magic is a game that uses hand gestures to generate spells. It records your real time hand movements using your webcam.</p>
+            </div>
+
+
+            </div>
+          </div>
+
+          <div class="rightProjects">
+            <div class="projectRightWrapper">
+              <div class="details">
+                <div class="desktopContentSection">
+                  <h1>Delivery Expenses Records App</h1>
+                  <p>A website dedicated to helping you track your Online Shopping Expenses.</p>                
+                </div>
+
+             
+                <div class="desktopContentSection">
+                  <h1>CloudComplexitech </h1>
+                  <p>A website that gives users knowledge on the configuring tech related stuff.</p>              
+                </div>
+
+            
+                <div class="desktopContentSection">
+                  <h1>Midnight Coffee Website</h1>
+                  <p>Midnight Coffee is a website that features a menu where customers can order food.</p>               
+                </div>
+
+              
+                <div class="desktopContentSection">
+                  <h1>Handy Magic - A Hand Gesture recognition based game</h1>
+                  <p>Handy magic is a game that uses hand gestures to generate spells. It records your real time hand movements using your webcam.</p>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
        </div>
-       
+       <div class="spacer"></div>
+
        <!--Footer-->
       
        <div id="Footer">
@@ -201,23 +229,7 @@
             <hr class="solid">
       </div>
       <br>
-           <!--
-          <form action="/action_page.php">
 
-            <input type="text" id="name" name="fullname" placeholder="Your Name..">
-        <br>
-           
-            <input type="text" id="email" name="email" placeholder="Your Email">
-        <br>
-           
-            <textarea id="message" name="message" placeholder="Your message.." style="height:100px"></textarea>
-        <br>
-        
-        <hr class="solid">
-        <br>
-            <input id="footerSubmit" type="submit" onclick="sendMail()" value="Submit">
-          </form> 
--->
 
         </div>
         <br>
@@ -232,11 +244,12 @@
         </div>
       </div>
 </div>
+</body>
         <script>         
             //loader
 var loader = document.getElementById("loader");
-var myDiv = document.getElementById("myDiv");
-var animateLogo = document.getElementById("animateLogo");
+document.getElementById("myDiv").style.visibility = "hidden";
+document.body.style.overflow = "hidden";
 window.addEventListener("load", function(){
     loader.style.display = "none";
     animateLogo.style.display = "block";
@@ -244,7 +257,8 @@ window.addEventListener("load", function(){
     
 });
 animateLogo.addEventListener("animationend", function() {
-		 myDiv.style.display = "block";
+     document.getElementById("myDiv").style.visibility = "visible";
+     document.body.style.overflow = "auto";
                   animateLogo.style.display = "none";
 });
 //Close navbar on scroll
@@ -262,7 +276,7 @@ animateLogo.addEventListener("animationend", function() {
 });
 
 
-
+///Typer Script
     const roles = ["Software Engineer", "Programmer", "Full Stack Developer"];
     const typewriterElement = document.getElementById('typewriter');
     let roleIndex = 0;
@@ -291,7 +305,8 @@ animateLogo.addEventListener("animationend", function() {
     // Start the typing animation
     startTypingAnimation();
 
-    
+  
+//PS5
 gsap.registerPlugin(ScrollTrigger);
 gsap.to(".PS5container",{
   scrollTrigger:{
@@ -307,6 +322,7 @@ gsap.to(".PS5container",{
   duration: 1
 });
 
+//Laptop
 gsap.to(".laptopContainer",{
   scrollTrigger:{
     trigger:".laptopContainer",
@@ -321,7 +337,7 @@ gsap.to(".laptopContainer",{
   duration: 1
 });
 
-
+// Pan
 gsap.registerPlugin(ScrollTrigger);
 gsap.to(".panContainer",{
   scrollTrigger:{
@@ -337,6 +353,54 @@ gsap.to(".panContainer",{
 });
 
 
+const details = gsap.utils.toArray(".desktopContentSection:not(:first-child)")
+const photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)")
+
+gsap.set(photos, {yPercent:101})
+
+const allPhotos = gsap.utils.toArray(".desktopPhoto")
+
+// create
+let mm = gsap.matchMedia();
+
+// add a media query. When it matches, the associated function will run
+mm.add("(min-width: 600px)", () => {
+
+  // this setup code only runs when viewport is at least 600px wide
+  console.log("desktop")
+  
+  ScrollTrigger.create({
+  trigger:".projectsContainer",
+  start:"top top",
+  end:"bottom bottom",
+  pin:".leftProjects",
+  markers: false
+})
+
+//create scrolltrigger for each details section
+//trigger photo animation when headline of each details section 
+//reaches 80% of window height
+details.forEach((detail, index)=> {
+
+  let headline = detail.querySelector("h1")
+  let animation = gsap.timeline()
+     .to(photos[index], {yPercent:0})
+     .set(allPhotos[index], {autoAlpha:0})
+  ScrollTrigger.create({
+    trigger:headline,
+    start:"top 80%",
+    end:"top 50%",
+    animation:animation,
+    scrub:true,
+    markers:false
+  })
+})
+
+  return () => { // optional
+    // custom cleanup code here (runs when it STOPS matching)
+    console.log("mobile")
+  };
+});
 
 
 function calculateMovementDistance() {
@@ -360,5 +424,5 @@ function calculateMovementDistance() {
 
         </script>
 
-    </body>
+   
 </html>
