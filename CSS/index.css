@@ -514,9 +514,11 @@ font-size: 0.8em;
 	width:50%;
   color:white;
 }
-.projectLeftWrapper,.projectRightWrapper {
+.projectLeftWrapper, .projectRightWrapper {
 	margin:auto;
 	width:90%;
+  display:flex;
+
 }
 
 
@@ -532,7 +534,6 @@ font-size: 0.8em;
 	width:50%;
 	height:100vh;
 	display:flex;
-
 }
 
 .projectImages {
@@ -544,6 +545,38 @@ font-size: 0.8em;
 	box-shadow:4px 4px 4px rgba(0, 0, 0, 0.4);
   background-size: cover;
 }
+.projectImagesWrapper {
+  width:45vw;
+  height:25vw;
+  position:relative;
+}
+
+.projectImagesWrapper.animate::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius:20px;
+  left: 0;
+  top: 0;
+  --outline-color: white; /* Default outline color */
+  outline: 20px solid var(--outline-color);
+  outline-width: 2px;
+  animation: pulse 1s linear;
+}
+
+@keyframes pulse {
+  0% {
+    outline-offset: 2px;
+    opacity: 1;
+  }
+
+  100% {
+    outline-offset: 40px;
+    opacity: 0;
+  }
+}
+
 
 .P1 {
   background: #02FD4F;
@@ -569,6 +602,7 @@ font-size: 0.8em;
   background-size: contain;
   background-position: center center; 
   margin: 0;
+  
  
 }
 .mobileContent {
@@ -586,6 +620,7 @@ font-size: 0.8em;
   background-position: center; 
   margin: 0 
 }
+
 @media screen and (max-width: 599px) {
 	.rightProjects {
 		display:none;

@@ -138,16 +138,19 @@
        <div id="projectsContainer" class="projectsContainer">
         <div class="leftProjects">
           <div class="projectLeftWrapper">
-            <div class="projectImages">
+            <div class="projectImagesWrapper">
              
-                <div class="desktopPhoto P1"></div>
+              <div class="projectImages">
+              
+                  <div class="desktopPhoto P1"></div>
 
-                <div class="desktopPhoto P2"></div> 
+                  <div class="desktopPhoto P2"></div> 
 
-                <div class="desktopPhoto P3"></div>
+                  <div class="desktopPhoto P3"></div>
 
-                <div class="desktopPhoto P4"></div>             
-           
+                  <div class="desktopPhoto P4"></div>             
+            
+              </div>
             </div>
 
             <div class="mobileContent">
@@ -182,7 +185,7 @@
 
              
                 <div class="desktopContentSection">
-                  <h1>CloudComplexitech </h1>
+                  <h1>CloudComplexitech</h1>
                   <p>A website that gives users knowledge on the configuring tech related stuff.</p>              
                 </div>
 
@@ -381,7 +384,6 @@ mm.add("(min-width: 600px)", () => {
 //trigger photo animation when headline of each details section 
 //reaches 80% of window height
 details.forEach((detail, index)=> {
-
   let headline = detail.querySelector("h1")
   let animation = gsap.timeline()
      .to(photos[index], {yPercent:0})
@@ -392,7 +394,19 @@ details.forEach((detail, index)=> {
     end:"top 50%",
     animation:animation,
     scrub:true,
-    markers:false
+    markers:false,
+    onEnter: () => {
+      // This callback will be executed when the scroll enters the trigger range
+      document.querySelector('.projectImagesWrapper').classList.toggle('animate');
+    },
+    onLeaveBack: () => {
+      // This callback will be executed when the scroll leaves the trigger range
+      document.querySelector('.projectImagesWrapper').classList.toggle('animate');
+    },
+    onLeave: () => {
+      // This callback will be executed when the scroll reaches the end
+      document.querySelector('.projectImagesWrapper').classList.toggle('animate');
+    },
   })
 })
 
@@ -401,6 +415,7 @@ details.forEach((detail, index)=> {
     console.log("mobile")
   };
 });
+
 
 
 function calculateMovementDistance() {
