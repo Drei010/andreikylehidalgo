@@ -637,6 +637,12 @@ font-size: 0.8em;
   .mobileContent {
 		display:block;
 	}
+  .projectImagesWrapper {
+    display: none;
+  }
+  .projectImagesWrapper.animate::before {
+    display: none;
+  }
 }
 
 
