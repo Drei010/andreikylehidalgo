@@ -56,9 +56,8 @@
            <!--About me-->
               <div id="aboutContainer" class="aboutContainer">
           <div class="aboutmeSection">
-            <br>
-            <br>
-            <br>
+            <div class="spacer"></div> 
+            <div class="spacer"></div> 
             <h1>About me</h1>
             <div class="PS5container"><img class="PS5image" src="images/PS5.gif" alt="PS5"></div>
         <p>"I'm a student aspiring to be a full stack developer from Cavite, Philippines. Currently,
@@ -75,14 +74,129 @@
           </p>
 
           <hr class="solid">
-
+          <div class="spacer"></div> 
         </div>
       </div>
    
 
        <!--Skills-->
+       <div id="skillsContainer" class="skillsContainer">
+        <div class="skillsSection">
+          <div class="wrapper">
+            <div class="logoSkills">
+              <h1>Skills</h1>
+             </div>
+              <section class="intro">
+                  <div class="line"></div>
+              </section>
+      
+              <section class="frontEndArea character">
+                  <div class="block"></div>
+          
+      
+                  <span class="huge-text"><div class="FrontEnd">Front-End</div></span>
+                  <div class="caption">
+      
+                    <div class="skillImagesWrapper">
+                    <img class="skillImages" src="images/html-5.png" alt="HTML">
+                    <img class="skillImages" src="images/css-3.png" alt="CSS">
+                    <img class="skillImages" src="images/js.png" alt="Javascript">
+                      </div>
+      
+      
+                  </div>
+                  <div class="nickname"><a class="projectLangauges">HTML</a>
+                    <a class="projectLangauges">CSS</a>
+                    <a class="projectLangauges">JavaScript</a>
+                  </div>
+                  <div class="quote">
+                    The front end is the part of a website or app that you can see and interact with, like buttons, forms, and menus. It's where users engage with the content and functionality of the digital product, making it easy for them to navigate and use.
+                  </div>
+              </section>
+      
+              <section class="backEndArea character">
+                  <div class="block"></div>
+                  <span class="huge-text"><div class="BackEnd">Back-End</div></span>
+                  <div class="caption">
+                      <div class="skillImagesWrapper">
+                    <img class="skillImages" src="images/C_Sharp.png" alt="C#"> 
+                    <img class="skillImages" src="images/Python.png" alt="Python">
+                    <img class="skillImages" src="images/java.png" alt="JAVA">
+                    <img class="skillImages" src="images/sql.png" alt="SQL">
+                      </div>
+                  </div>
+                  <div class="nickname">
+                    <a class="projectLangauges">C#</a>
+                    <a class="projectLangauges">Python</a>
+                    <a class="projectLangauges">Java</a>
+                    <a class="projectLangauges">SQL</a></div>
+                  <div class="quote">
+                    The backend is like the engine of a car that you don't see but powers everything. It's where data is stored, processed, and managed, enabling the functionality that users interact with on the frontend of websites and applications.
+      
+                  </div>
+              </section>
+      
+          </div>
+      
+
+
+
+
+
+          <div class="wrapperMobile">
+       
+            <h1>Skills</h1>
+                    <div class="skillGrid">
+              <div class="skill1">
+                  <img class="skillImages" src="images/html-5.png" alt="HTML">
+                  <h3>HTML</h3>
+              </div>
+              <div class="skill2">
+                  <img class="skillImages" src="images/css-3.png" alt="CSS">
+                  <h3>CSS</h3>
+              </div>
+              <div class="skill3">
+                  <img class="skillImages" src="images/java.png" alt="JAVA">
+                  <h3>JAVA</h3>
+              </div>  
+              <div class="skill4"> 
+                  <img class="skillImages" src="images/php.png" alt="PHP">
+                  <h3>PHP</h3>
+              </div>
+              <div class="skill5">
+                  <img class="skillImages" src="images/androids-studio2.png" alt="Android Studio">
+                  <h3>Android Studio</h3>
+              </div>
+                <div class="skill6">
+                  <img class="skillImages" src="images/js.png" alt="Javascript">
+                  <h3>JAVASCRIPT</h3>
+              </div> 
+            <div class="skill7"> 
+                <img class="skillImages" src="images/Unity.png" alt="UNITY">
+                <h3>UNITY</h3>
+            </div>
+            <div class="skill8">
+                <img class="skillImages" src="images/C_Sharp.png" alt="C#">
+                <h3>C#</h3>
+            </div>
+              <div class="skill9">
+                <img class="skillImages" src="images/Python.png" alt="Python">
+                <h3>PYTHON</h3>
+              </div>
+            </div>
+            </div>
+
+
+          
+
+ 
+</div>
+</div>
+
+
+  <!--      
     <div id="skillsContainer" class="skillsContainer">
-      <div class="skillsSection">
+      <div class="wrapperMobile">
        
         <h1>Skills</h1>
                 <div class="skillGrid">
@@ -127,7 +241,7 @@
         <p></p>
         </div>
     </div>
-
+-->
        <!--Personal Projects-->
        <div class="spacer"></div>
        <div class="projectTitle">
@@ -196,8 +310,6 @@
                 <a class="projectLangauges">SQL</a>
              </div>
             </div>
-
-
             </div>
           </div>
 
@@ -287,8 +399,6 @@
       </div>
   
       <br>
-
-
         </div>
         <br>
         <div id="linksContainer">
@@ -424,9 +534,6 @@ let mm = gsap.matchMedia();
 // add a media query. When it matches, the associated function will run
 mm.add("(min-width: 600px)", () => {
 
-  // this setup code only runs when viewport is at least 600px wide
-  console.log("desktop")
-  
   ScrollTrigger.create({
   trigger:".projectsContainer",
   start:"top top",
@@ -467,7 +574,7 @@ details.forEach((detail, index)=> {
 
   return () => { // optional
     // custom cleanup code here (runs when it STOPS matching)
-    console.log("mobile")
+
   };
 });
 
@@ -490,7 +597,121 @@ function calculateMovementDistance() {
   return movementDistance;
 }
 
+document.addEventListener('DOMContentLoaded', () => {
 
+const sections = gsap.utils.toArray('section');
+
+let scrollTween = gsap.to(sections, {
+    xPercent: -100 * (sections.length - 1),
+    ease: 'none',
+    scrollTrigger: {
+        trigger: '.wrapper',
+        pin: true,
+        scrub: 0.5,
+        snap: 1 / (sections.length - 1),
+        start: 'top top',
+        end: 3000,
+    }
+})
+
+gsap.to('.logoSkills', {
+    fontSize: '2rem',
+    top: '4rem',
+    scrollTrigger: {
+        trigger: '.logoSkills',
+        start: 'top top',
+        end: 1500,
+        scrub: 0.5,
+    }
+})
+
+gsap.to('.line', {
+    height: '10rem',
+    scrollTrigger: {
+        trigger: '.line',
+        scrub: 0.5,
+        start: 'center center',
+        end: 2000,
+    }
+})
+
+document.querySelectorAll('.character').forEach(el => {
+
+    gsap.to(el.querySelector('.caption'), {
+        x: 0,
+        y: 0,
+        scrollTrigger: {
+            containerAnimation: scrollTween,
+            trigger: el.querySelector('.caption'),
+            start: 'top bottom',
+            end: '+=1000',
+            scrub: 0.5,
+        }
+    })
+
+    gsap.to(el.querySelector('.quote'), {
+        y: 0,
+        ease: 'none',
+        scrollTrigger: {
+            containerAnimation: scrollTween,
+            trigger: el.querySelector('.quote'),
+            start: 'top bottom',
+            end: '+=20%',
+            scrub: 0.5,
+        }
+    })
+
+    gsap.to(el.querySelector('.nickname'), {
+        y: 0,
+        ease: 'none',
+        scrollTrigger: {
+            containerAnimation: scrollTween,
+            trigger: el.querySelector('.nickname'),
+            start: 'top bottom',
+            end: '+=10%',
+            scrub: 0.5,
+        }
+    })
+
+    gsap.to(el.querySelector('.block'), {
+        x: 0,
+        ease: 'none',
+        scrollTrigger: {
+            containerAnimation: scrollTween,
+            trigger: el.querySelector('.block'),
+            start: 'top bottom',
+            end: '+=' + window.innerWidth,
+            scrub: 0.5,
+        }
+    })
+/*
+    gsap.to(el.querySelector('img'), {
+        y: 0,
+        ease: 'none',
+        scrollTrigger: {
+            containerAnimation: scrollTween,
+            trigger: el.querySelector('img'),
+            start: 'top bottom',
+            end: '+=50%',
+            scrub: 0.5,
+        }
+    })
+*/
+    gsap.to(el.querySelector('.huge-text'), {
+        y: 0,
+        ease: 'none',
+        scrollTrigger: {
+            containerAnimation: scrollTween,
+            trigger: el.querySelector('.huge-text'),
+            start: 'top bottom',
+            end: '+=100%',
+            scrub: 0.5,
+        }
+    })
+
+})
+
+})
 
         </script>
 
