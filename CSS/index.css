@@ -21,6 +21,7 @@ html{
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 body{
   flex-grow: 1;
@@ -30,6 +31,7 @@ body{
   background-color:  #4484CE; /* For browsers that do not support gradients */
   background-image: linear-gradient(to right, #4484CE, #F19F4D);
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 
@@ -383,7 +385,7 @@ position:absolute;
 .skillsContainer {
   background: #D9D9D9;
   position: relative;
-  height: 285vh;
+  height: 300vh;
   z-index:2;
   justify-content: center;
   text-align: center;
@@ -620,7 +622,8 @@ section.character::before {
 font-size: 0.8em;
 }
 .wrapperMobile{
-  display: flex;
+  display: block;
+ 
   }
 .wrapper{
     display: none;

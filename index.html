@@ -13,7 +13,7 @@
     <h1 id="loader" data-text="AKH">AKH</h1>
     <a id="animateLogo">AKH</a>
 <body >        
-      <div id="myDiv" >          
+      <div id="myDiv">          
         <!--Navbar-->
         <nav>
               <input type="checkbox" id="check">
@@ -137,9 +137,7 @@
               </section>
       
           </div>
-      
-
-
+    
 
 
 
@@ -194,54 +192,6 @@
 </div>
 
 
-  <!--      
-    <div id="skillsContainer" class="skillsContainer">
-      <div class="wrapperMobile">
-       
-        <h1>Skills</h1>
-                <div class="skillGrid">
-          <div class="skill1">
-              <img class="skillImages" src="images/html-5.png" alt="HTML">
-              <h3>HTML</h3>
-          </div>
-          <div class="skill2">
-              <img class="skillImages" src="images/css-3.png" alt="CSS">
-              <h3>CSS</h3>
-          </div>
-          <div class="skill3">
-              <img class="skillImages" src="images/java.png" alt="JAVA">
-              <h3>JAVA</h3>
-          </div>  
-          <div class="skill4"> 
-              <img class="skillImages" src="images/php.png" alt="PHP">
-              <h3>PHP</h3>
-          </div>
-          <div class="skill5">
-              <img class="skillImages" src="images/androids-studio2.png" alt="Android Studio">
-              <h3>Android Studio</h3>
-          </div>
-            <div class="skill6">
-              <img class="skillImages" src="images/js.png" alt="Javascript">
-              <h3>JAVASCRIPT</h3>
-          </div> 
-        <div class="skill7"> 
-            <img class="skillImages" src="images/Unity.png" alt="UNITY">
-            <h3>UNITY</h3>
-        </div>
-        <div class="skill8">
-            <img class="skillImages" src="images/C_Sharp.png" alt="C#">
-            <h3>C#</h3>
-        </div>
-          <div class="skill9">
-            <img class="skillImages" src="images/Python.png" alt="Python">
-            <h3>PYTHON</h3>
-        </div>
-        </div>
-        
-        <p></p>
-        </div>
-    </div>
--->
        <!--Personal Projects-->
        <div class="spacer"></div>
        <div class="projectTitle">
@@ -417,7 +367,6 @@
             //loader
 var loader = document.getElementById("loader");
 document.getElementById("myDiv").style.visibility = "hidden";
-document.body.style.overflow = "hidden";
 window.addEventListener("load", function(){
     loader.style.display = "none";
     animateLogo.style.display = "block";
@@ -426,8 +375,9 @@ window.addEventListener("load", function(){
 });
 animateLogo.addEventListener("animationend", function() {
      document.getElementById("myDiv").style.visibility = "visible";
-     document.body.style.overflow = "auto";
-                  animateLogo.style.display = "none";
+
+     animateLogo.style.display = "none";
+     document.documentElement.style.overflowY = "visible";
 });
 //Close navbar on scroll
     window.addEventListener("scroll", function(){
