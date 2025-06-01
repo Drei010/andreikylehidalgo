@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrei Kyle Hidalgo</title>
+    <link rel="stylesheet" type="text/css" href="CSS/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  </head>
+  <!--Loader-->
+  <h1 id="loader" data-text="AKH">AKH</h1>
+  <a id="animateLogo">AKH</a>
+  <body>
+    <div id="myDiv">
+      <!--Navbar-->
+      <nav>
+        <input type="checkbox" id="check" />
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <a id="Logo">AKH</a>
+        <ul>
+          <li><a href="#aboutContainer" data-text="ABOUT">ABOUT</a></li>
+          <li><a href="#skillsContainer" data-text="SKILLS">SKILLS</a></li>
+          <li>
+            <a href="#projectsContainer" data-text="PROJECTS">PROJECTS</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!--Introduction-->
+      <div class="introContainer">
+        <div class="introSection">
+          <h1 class="hello">
+            Hello I'm Andrei
+            <div id="typewriter"></div>
+          </h1>
+
+          <a
+            class="resumeDownload"
+            href="Resume/Hidalgo_AndreiKyle_Resume.pdf"
+            download
+            ><i class="fa fa-download" aria-hidden="true"></i> Resume</a
+          >
+          <a class="contactLink" href="#Footer"
+            ><i class="fa fa-envelope" aria-hidden="true"></i> Contact</a
+          >
+          <a class="imageIntro1" href="https://github.com/Drei010">
+            <img class="introImages" src="images/github.png" alt="github" />
+          </a>
+
+          <a
+            class="imageIntro2"
+            href="https://www.linkedin.com/in/andrei-kyle-hidalgo/"
+          >
+            <img class="introImages" src="images/linkedin.png" alt="linkedin" />
+          </a>
+        </div>
+      </div>
+
+      <!--About me-->
+      <div id="aboutContainer" class="aboutContainer">
+        <div class="aboutmeSection">
+          <div class="spacer"></div>
+          <h1>About me</h1>
+          <div class="spacer"></div>
+          <div class="PS5container">
+            <img class="PS5image" src="images/PS5.gif" alt="PS5" />
+          </div>
+          <p>
+            "I'm a student aspiring to be a full stack developer from Cavite,
+            Philippines. Currently, I am studying Computer Science at the
+            University of Santo Tomas.
+          </p>
+          <br />
+
+          <div class="laptopContainer">
+            <img class="laptopImage" src="images/Laptop.gif" alt="Laptop" />
+          </div>
+
+          <p>
+            Since I have always been fascinated by technology and its ability to
+            transform the world, I am particularly interested in web
+            development. I enjoy creating websites, with a particular focus on
+            the back-end. There's something about the logic behind it that
+            really appeals to me, and I love the challenge of writing efficient
+            and maintainable code.
+          </p>
+          <br />
+          <div class="panContainer">
+            <img class="panImage" src="images/pan.gif" alt="Pan" />
+          </div>
+          <p>
+            When I'm not coding or studying, I'm probably experimenting with new
+            recipes and cooking food in the kitchen.
+          </p>
+          <div class="spacer"></div>
+          <hr class="solid" />
+          <div class="spacer"></div>
+        </div>
+      </div>
+
+      <!--Skills-->
+      <div id="skillsContainer" class="skillsContainer">
+        <div class="skillsSection">
+          <div class="wrapper">
+            <div class="logoSkills">
+              <h1>Skills</h1>
+            </div>
+            <section class="intro">
+              <div class="line"></div>
+            </section>
+
+            <section class="frontEndArea character">
+              <div class="block"></div>
+
+              <span class="huge-text"
+                ><div class="FrontEnd">Front-End</div></span
+              >
+              <div class="caption">
+                <div class="skillImagesWrapper">
+                  <img class="skillImages" src="images/html-5.png" alt="HTML" />
+                  <img class="skillImages" src="images/css-3.png" alt="CSS" />
+                  <img
+                    class="skillImages"
+                    src="images/js.png"
+                    alt="Javascript"
+                  />
+                </div>
+              </div>
+              <div class="nickname">
+                <a class="projectLangauges">HTML</a>
+                <a class="projectLangauges">CSS</a>
+                <a class="projectLangauges">JavaScript</a>
+              </div>
+              <div class="quote">
+                The front end is the part of a website or app that you can see
+                and interact with, like buttons, forms, and menus. It's where
+                users engage with the content and functionality of the digital
+                product, making it easy for them to navigate and use.
+              </div>
+            </section>
+
+            <section class="backEndArea character">
+              <div class="block"></div>
+              <span class="huge-text"><div class="BackEnd">Back-End</div></span>
+              <div class="caption">
+                <div class="skillImagesWrapper">
+                  <img class="skillImages" src="images/C_Sharp.png" alt="C#" />
+                  <img
+                    class="skillImages"
+                    src="images/Python.png"
+                    alt="Python"
+                  />
+                  <img class="skillImages" src="images/java.png" alt="JAVA" />
+                  <img class="skillImages" src="images/sql.png" alt="SQL" />
+                </div>
+              </div>
+              <div class="nickname">
+                <a class="projectLangauges">C#</a>
+                <a class="projectLangauges">Python</a>
+                <a class="projectLangauges">Java</a>
+                <a class="projectLangauges">SQL</a>
+              </div>
+              <div class="quote">
+                The backend is like the engine of a car that you don't see but
+                powers everything. It's where data is stored, processed, and
+                managed, enabling the functionality that users interact with on
+                the frontend of websites and applications.
+              </div>
+            </section>
+          </div>
+          <div class="spacer"></div>
+
+          <div class="wrapperMobile">
+            <h1>Skills</h1>
+            <div class="skillGrid">
+              <div class="skill1">
+                <img class="skillImages" src="images/html-5.png" alt="HTML" />
+                <h3>HTML</h3>
+              </div>
+              <div class="skill2">
+                <img class="skillImages" src="images/css-3.png" alt="CSS" />
+                <h3>CSS</h3>
+              </div>
+              <div class="skill3">
+                <img class="skillImages" src="images/java.png" alt="JAVA" />
+                <h3>JAVA</h3>
+              </div>
+              <div class="skill4">
+                <img class="skillImages" src="images/php.png" alt="PHP" />
+                <h3>PHP</h3>
+              </div>
+              <div class="skill5">
+                <img
+                  class="skillImages"
+                  src="images/androids-studio2.png"
+                  alt="Android Studio"
+                />
+                <h3>Android Studio</h3>
+              </div>
+              <div class="skill6">
+                <img class="skillImages" src="images/js.png" alt="Javascript" />
+                <h3>JAVASCRIPT</h3>
+              </div>
+              <div class="skill7">
+                <img class="skillImages" src="images/Unity.png" alt="UNITY" />
+                <h3>UNITY</h3>
+              </div>
+              <div class="skill8">
+                <img class="skillImages" src="images/C_Sharp.png" alt="C#" />
+                <h3>C#</h3>
+              </div>
+              <div class="skill9">
+                <img class="skillImages" src="images/Python.png" alt="Python" />
+                <h3>PYTHON</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Personal Projects-->
+      <div class="spacer"></div>
+      <div class="projectTitle">
+        <h1>Projects</h1>
+      </div>
+
+      <div id="projectsContainer" class="projectsContainer">
+        <div class="leftProjects">
+          <div class="projectLeftWrapper">
+            <div class="projectImagesWrapper">
+              <div class="projectImages">
+                <div class="desktopPhoto P1"></div>
+
+                <div class="desktopPhoto P2"></div>
+
+                <div class="desktopPhoto P3"></div>
+
+                <div class="desktopPhoto P4"></div>
+              </div>
+            </div>
+
+            <div class="mobileContent">
+              <div class="mobilePhoto P1"></div>
+              <br />
+              <h1>Midnight Coffee Website</h1>
+              <br />
+              <p>
+                Midnight Coffee is a website featuring a menu through which
+                customers can order food. It offers a convenient platform for
+                late-night cravings or early morning bites. Explore Midnight
+                Coffee's menu to satisfy your hunger cravings at any hour.
+              </p>
+              <br />
+              <div class="languages-wrapper">
+                <a class="projectLangauges">HTML</a>
+                <a class="projectLangauges">CSS</a>
+                <a class="projectLangauges">JavaScript</a>
+                <a class="projectLangauges">Java</a>
+                <a class="projectLangauges">SQL</a>
+              </div>
+              <div class="spacer"></div>
+              <div class="mobilePhoto P2"></div>
+              <br />
+              <h1>Handy Magic - A Hand Gesture recognition based game</h1>
+              <br />
+              <p>
+                Imagine a Naruto-inspired game where hand signs are woven to
+                create jutsus. Handy Magic, a 3D game developed as a thesis
+                project, records real-time hand movements via your webcam. Weave
+                your hand signs into various combinations to combat enemies in
+                this immersive experience.
+              </p>
+              <br />
+              <div class="languages-wrapper">
+                <a class="projectLangauges">C#</a>
+                <a class="projectLangauges">Python</a>
+                <a class="projectLangauges">Unity</a>
+                <a class="projectLangauges">Blender</a>
+              </div>
+              <div class="spacer"></div>
+              <div class="mobilePhoto P3"></div>
+              <br />
+              <h1>Delivery Expenses Records App</h1>
+              <br />
+              <p>
+                Dedicated to aiding users in tracking their online shopping
+                expenses, this website serves as a valuable resource. It offers
+                a user-friendly platform to monitor and manage your expenditures
+                in the realm of online shopping. Utilize this dedicated site for
+                efficient expense tracking in the digital shopping landscape.
+              </p>
+              <br />
+              <div class="languages-wrapper">
+                <a class="projectLangauges">HTML</a>
+                <a class="projectLangauges">CSS</a>
+                <a class="projectLangauges">JavaScript</a>
+                <a class="projectLangauges">Java</a>
+                <a class="projectLangauges">SQL</a>
+              </div>
+              <div class="spacer"></div>
+              <div class="mobilePhoto P4"></div>
+              <br />
+              <h1>CloudComplexitech</h1>
+              <br />
+              <p>
+                Unlock the power of technology with our educational website,
+                designed to demystify the complexities of configuring
+                tech-related systems Cloudcomplexitech is here to guide you
+                through every step of your tech journey with expertise and
+                ease."
+              </p>
+              <br />
+              <div class="languages-wrapper">
+                <a class="projectLangauges">HTML</a>
+                <a class="projectLangauges">CSS</a>
+                <a class="projectLangauges">JavaScript</a>
+                <a class="projectLangauges">Java</a>
+                <a class="projectLangauges">SQL</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="rightProjects">
+          <div class="projectRightWrapper">
+            <div class="details">
+              <div class="desktopContentSection">
+                <h1>Midnight Coffee Website</h1>
+                <br />
+                <p>
+                  Midnight Coffee is a website featuring a menu through which
+                  customers can order food. It offers a convenient platform for
+                  late-night cravings or early morning bites. Explore Midnight
+                  Coffee's menu to satisfy your hunger cravings at any hour.
+                </p>
+                <br />
+                <div class="languages-wrapper">
+                  <a class="projectLangauges">HTML</a>
+                  <a class="projectLangauges">CSS</a>
+                  <a class="projectLangauges">JavaScript</a>
+                  <a class="projectLangauges">Java</a>
+                  <a class="projectLangauges">SQL</a>
+                </div>
+              </div>
+
+              <div class="desktopContentSection">
+                <h1>Handy Magic - A Hand Gesture recognition based game</h1>
+                <br />
+                <p>
+                  Imagine a Naruto-inspired game where hand signs are woven to
+                  create jutsus. Handy Magic, a 3D game developed as a thesis
+                  project, records real-time hand movements via your webcam.
+                  Weave your hand signs into various combinations to combat
+                  enemies in this immersive experience.
+                </p>
+                <br />
+                <div class="languages-wrapper">
+                  <a class="projectLangauges">C#</a>
+                  <a class="projectLangauges">Python</a>
+                  <a class="projectLangauges">Unity</a>
+                  <a class="projectLangauges">Blender</a>
+                </div>
+              </div>
+
+              <div class="desktopContentSection">
+                <h1>Delivery Expenses Records App</h1>
+                <br />
+                <p>
+                  Dedicated to aiding users in tracking their online shopping
+                  expenses, this website serves as a valuable resource. It
+                  offers a user-friendly platform to monitor and manage your
+                  expenditures in the realm of online shopping. Utilize this
+                  dedicated site for efficient expense tracking in the digital
+                  shopping landscape.
+                </p>
+                <br />
+                <div class="languages-wrapper">
+                  <a class="projectLangauges">HTML</a>
+                  <a class="projectLangauges">CSS</a>
+                  <a class="projectLangauges">JavaScript</a>
+                  <a class="projectLangauges">Java</a>
+                  <a class="projectLangauges">SQL</a>
+                </div>
+              </div>
+
+              <div class="desktopContentSection">
+                <h1>CloudComplexitech</h1>
+                <br />
+                <p>
+                  Unlock the power of technology with our educational website,
+                  designed to demystify the complexities of configuring
+                  tech-related systems Cloudcomplexitech is here to guide you
+                  through every step of your tech journey with expertise and
+                  ease."
+                </p>
+                <br />
+                <div class="languages-wrapper">
+                  <a class="projectLangauges">HTML</a>
+                  <a class="projectLangauges">CSS</a>
+                  <a class="projectLangauges">JavaScript</a>
+                  <a class="projectLangauges">Java</a>
+                  <a class="projectLangauges">SQL</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="spacer"></div>
+
+      <!--Footer-->
+
+      <div id="Footer">
+        <h2 class="contactMe">Contact Me</h2>
+        <div id="footerContainer">
+          <div class="emailAddress">
+            <h3>Email Address</h3>
+            <br />
+            <a
+              class="contactLinks"
+              href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRwRQGSCxXBtKjjqvMmvQcFhGVSPbZWlxjkjDcCKpfTgqsjDNTLjDQgXvgkXJdFRBxfVQzlb"
+            >
+              andreihidalgo16@gmail.com
+            </a>
+            <hr class="solid" />
+          </div>
+
+          <div class="phoneNumber">
+            <h3>Phone Number</h3>
+            <br />
+            09296693662
+            <hr class="solid" />
+          </div>
+
+          <br />
+        </div>
+        <br />
+        <div id="linksContainer">
+          <a href="https://github.com/Drei010">
+            <img class="introImages" src="images/github.png" alt="github" />
+          </a>
+          <a href="https://www.linkedin.com/in/andrei-kyle-hidalgo/">
+            <img class="introImages" src="images/linkedin.png" alt="linkedin" />
+          </a>
+          <h4>ANDREI KYLE HIDALGO @2023</h4>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    //loader
+    var loader = document.getElementById("loader");
+    document.getElementById("myDiv").style.visibility = "hidden";
+    window.addEventListener("load", function () {
+      loader.style.display = "none";
+      animateLogo.style.display = "block";
+    });
+    animateLogo.addEventListener("animationend", function () {
+      document.getElementById("myDiv").style.visibility = "visible";
+
+      animateLogo.style.display = "none";
+      document.documentElement.style.overflowY = "visible";
+    });
+    //Close navbar on scroll
+    window.addEventListener("scroll", function () {
+      document.getElementById("check").checked = false;
+    });
+
+    //Scroll to specific sections
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+      anchor.addEventListener("click", function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute("href")).scrollIntoView({
+          behavior: "smooth",
+        });
+      });
+    });
+
+    ///Typer Script
+    const roles = ["Software Engineer", "Full Stack Developer"];
+    const typewriterElement = document.getElementById("typewriter");
+    let roleIndex = 0;
+
+    function updateTypewriterText() {
+      typewriterElement.textContent = `${roles[roleIndex]}`;
+      roleIndex = (roleIndex + 1) % roles.length;
+    }
+
+    function startTypingAnimation() {
+      // Update text before starting typing animation
+      updateTypewriterText();
+
+      // Start typing animation
+      typewriterElement.style.animation =
+        "typing 5s steps(30) infinite, blink-caret 0.5s step-end infinite";
+
+      // Set up an interval to change the text every 5 seconds (adjust as needed)
+      setInterval(() => {
+        typewriterElement.style.animation = "none"; // Disable animation temporarily
+        updateTypewriterText();
+        typewriterElement.offsetWidth; // Trigger reflow
+        typewriterElement.style.animation =
+          "typing 5s steps(30) infinite, blink-caret 0.5s step-end infinite";
+      }, 5000);
+    }
+
+    // Start the typing animation
+    startTypingAnimation();
+
+    //PS5
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".PS5container", {
+      scrollTrigger: {
+        trigger: ".PS5container",
+        start: "top center",
+        end: "top 150px",
+        scrub: true,
+        markers: false,
+      },
+      x: calculateMovementDistance(),
+      rotate: 360,
+      ease: "none",
+      duration: 1,
+    });
+
+    //Laptop
+    gsap.to(".laptopContainer", {
+      scrollTrigger: {
+        trigger: ".laptopContainer",
+        start: "top center",
+        end: "top 150px",
+        scrub: true,
+        markers: false,
+      },
+      x: -calculateMovementDistance(),
+      rotate: 360,
+      ease: "none",
+      duration: 1,
+    });
+
+    // Pan
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(".panContainer", {
+      scrollTrigger: {
+        trigger: ".panContainer",
+        start: "top center",
+        end: "top 150px",
+        scrub: true,
+        markers: false,
+      },
+      x: calculateMovementDistance(),
+      ease: "none",
+      duration: 1,
+    });
+
+    const details = gsap.utils.toArray(
+      ".desktopContentSection:not(:first-child)"
+    );
+    const photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)");
+
+    gsap.set(photos, { yPercent: 101 });
+
+    const allPhotos = gsap.utils.toArray(".desktopPhoto");
+
+    // create
+    let mm = gsap.matchMedia();
+
+    // add a media query. When it matches, the associated function will run
+    mm.add("(min-width: 600px)", () => {
+      ScrollTrigger.create({
+        trigger: ".projectsContainer",
+        start: "top top",
+        end: "bottom bottom",
+        pin: ".leftProjects",
+        markers: false,
+      });
+
+      //create scrolltrigger for each details section
+      //trigger photo animation when headline of each details section
+      //reaches 80% of window height
+      details.forEach((detail, index) => {
+        let headline = detail.querySelector("h1");
+        let animation = gsap
+          .timeline()
+          .to(photos[index], { yPercent: 0 })
+          .set(allPhotos[index], { autoAlpha: 0 });
+        ScrollTrigger.create({
+          trigger: headline,
+          start: "top 80%",
+          end: "top 50%",
+          animation: animation,
+          scrub: true,
+          markers: false,
+          onEnter: () => {
+            // This callback will be executed when the scroll enters the trigger range
+            document
+              .querySelector(".projectImagesWrapper")
+              .classList.toggle("animate");
+          },
+          onLeaveBack: () => {
+            // This callback will be executed when the scroll leaves the trigger range
+            document
+              .querySelector(".projectImagesWrapper")
+              .classList.toggle("animate");
+          },
+          onLeave: () => {
+            // This callback will be executed when the scroll reaches the end
+            document
+              .querySelector(".projectImagesWrapper")
+              .classList.toggle("animate");
+          },
+        });
+      });
+
+      return () => {
+        // optional
+        // custom cleanup code here (runs when it STOPS matching)
+      };
+    });
+
+    function calculateMovementDistance() {
+      // Get the current screen width
+      const screenWidth =
+        window.innerWidth ||
+        document.documentElement.clientWidth ||
+        document.body.clientWidth;
+
+      // Set a base movement distance
+      let movementDistance = 300;
+
+      // Adjust the movement distance based on screen width (modify as needed)
+      if (screenWidth < 768) {
+        movementDistance = 150; // Adjust for smaller screens
+      } else if (screenWidth < 1200) {
+        movementDistance = 200; // Adjust for medium-sized screens
+      }
+
+      return movementDistance;
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const sections = gsap.utils.toArray("section");
+
+      let scrollTween = gsap.to(sections, {
+        xPercent: -100 * (sections.length - 1),
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".wrapper",
+          pin: true,
+          scrub: 0.5,
+          snap: 1 / (sections.length - 1),
+          start: "top top",
+          end: 3000,
+        },
+      });
+
+      gsap.to(".logoSkills", {
+        fontSize: "2rem",
+        top: "4rem",
+        scrollTrigger: {
+          trigger: ".logoSkills",
+          start: "top top",
+          end: 1500,
+          scrub: 0.5,
+        },
+      });
+
+      gsap.to(".line", {
+        height: "10rem",
+        scrollTrigger: {
+          trigger: ".line",
+          scrub: 0.5,
+          start: "center center",
+          end: 2000,
+        },
+      });
+
+      document.querySelectorAll(".character").forEach((el) => {
+        gsap.to(el.querySelector(".caption"), {
+          x: 0,
+          y: 0,
+          scrollTrigger: {
+            containerAnimation: scrollTween,
+            trigger: el.querySelector(".caption"),
+            start: "top bottom",
+            end: "+=1000",
+            scrub: 0.5,
+          },
+        });
+
+        gsap.to(el.querySelector(".quote"), {
+          y: 0,
+          ease: "none",
+          scrollTrigger: {
+            containerAnimation: scrollTween,
+            trigger: el.querySelector(".quote"),
+            start: "top bottom",
+            end: "+=20%",
+            scrub: 0.5,
+          },
+        });
+
+        gsap.to(el.querySelector(".nickname"), {
+          y: 0,
+          ease: "none",
+          scrollTrigger: {
+            containerAnimation: scrollTween,
+            trigger: el.querySelector(".nickname"),
+            start: "top bottom",
+            end: "+=10%",
+            scrub: 0.5,
+          },
+        });
+
+        gsap.to(el.querySelector(".block"), {
+          x: 0,
+          ease: "none",
+          scrollTrigger: {
+            containerAnimation: scrollTween,
+            trigger: el.querySelector(".block"),
+            start: "top bottom",
+            end: "+=" + window.innerWidth,
+            scrub: 0.5,
+          },
+        });
+        gsap.to(el.querySelector(".huge-text"), {
+          y: 0,
+          ease: "none",
+          scrollTrigger: {
+            containerAnimation: scrollTween,
+            trigger: el.querySelector(".huge-text"),
+            start: "top bottom",
+            end: "+=100%",
+            scrub: 0.5,
+          },
+        });
+      });
+    });
+  </script>
+</html>
